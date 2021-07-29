@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>BART Scheduling</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="transit.css" type="text/css" rel="stylesheet" />
+<script src="apiKey.js"></script>
+<script src="stations.js"></script>
+
+</head>
+
+<body>
+
+    <div data-role="page">
+        
+        <div class="main"data-role="header" id="header">BART Train Departures</div>
+
+            <div data-role="main" class="ui-content">
+                <form>
+                    <div class="ui-field-contain">
+                        <label for="station">Station: </label>
+                        <select name="station" id="station"></select>
+                    </div>
+                </form>
+                <ul data-role="list-view" id="trains">
+
+                </ul>
+            </div>
+
+
+        <div data-role="footer" id="footer">
+            Bay Area Rapid Transit (BART) is a heavy rail elevated and subway public transportation system serving the San Francisco Bay Area in California.
+        </div>
+        <script src="transit.js"></script>
+    </div>
+
+</body>
+</html>
