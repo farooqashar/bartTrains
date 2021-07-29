@@ -41,7 +41,7 @@ function displayEachTrain(train) {
 };
 
 function requestData(stationAbbr) {
-    let requestURL = "http://api.bart.gov/api/etd.aspx?cmd=etd&orig=" + stationAbbr + "&json=y&key=" + apiKey;
+    let requestURL = "https://api.bart.gov/api/etd.aspx?cmd=etd&orig=" + stationAbbr + "&json=y&key=" + apiKey;
     $.get(requestURL,
     function (data) {
         let trains = data.root.station[0].etd;
